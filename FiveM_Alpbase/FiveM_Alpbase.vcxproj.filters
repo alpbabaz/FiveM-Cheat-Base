@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="AmGui\custom_widgets.cpp">
+      <Filter>AmGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_draw.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_freetype.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_impl_dx11.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_impl_win32.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_tables.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_widgets.cpp">
+      <Filter>ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mjLib">
+      <UniqueIdentifier>{e58ee625-badc-4fde-8549-843870a35031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{24944dbb-e386-4bd5-a0c2-02017365c583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{2fda9df0-637a-4335-b003-71e507d172fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Cheat">
+      <UniqueIdentifier>{313b5afc-47b0-4202-a3d6-350834bd16f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Overlay">
+      <UniqueIdentifier>{525a3c1b-ea4a-42af-a05e-05c24be736a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AmGui">
+      <UniqueIdentifier>{7fe418cb-ddf0-4b1a-8c13-0b003b6a00d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mjLib\Console.hpp">
+      <Filter>mjLib</Filter>
+    </ClInclude>
+    <ClInclude Include="mjLib\Hwid.hpp">
+      <Filter>mjLib</Filter>
+    </ClInclude>
+    <ClInclude Include="mjLib\Logger.hpp">
+      <Filter>mjLib</Filter>
+    </ClInclude>
+    <ClInclude Include="mjLib\mjLib.hpp">
+      <Filter>mjLib</Filter>
+    </ClInclude>
+    <ClInclude Include="mjLib\Process.hpp">
+      <Filter>mjLib</Filter>
+    </ClInclude>
+    <ClInclude Include="mjLib\String.hpp">
+      <Filter>mjLib</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu\Menu.hpp">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Cheat.hpp">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\GameSDK.hpp">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Memory.hpp">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Ped.hpp">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Structs.hpp">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\Game.hpp">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Cheat\SimpleMath.h">
+      <Filter>Cheat</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlay\Overlay.hpp">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\custom_widgets.hpp">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\directx_blur.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\esp.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\font.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\font_defines.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\image.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\images.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\main.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\notifications.h">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\pshader.hpp">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="AmGui\Sounds.hpp">
+      <Filter>AmGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imconfig.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_freetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_impl_dx11.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_impl_win32.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_internal.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_settings.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imstb_rectpack.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imstb_textedit.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imstb_truetype.h">
+      <Filter>ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Overlay\OverlayDraw.hpp">
+      <Filter>Overlay</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cheat\SimpleMath.inl">
+      <Filter>Cheat</Filter>
+    </None>
+  </ItemGroup>
+</Project>

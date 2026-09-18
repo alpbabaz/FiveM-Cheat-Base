@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f1fb4229-95b7-4fa8-ad27-5b31f66ba2ed}</ProjectGuid>
+    <RootNamespace>FiveM_Alpbase</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)\Libraries\DirectX\include;$(ProjectDir)\Libraries\OpenSSL\include;$(ProjectDir)\Libraries\zLib\include;$(ProjectDir)\Libraries\cURL\include;$(ProjectDir)\Libraries\ImGui\include;$(ProjectDir)\Libraries\FreeType\include;$(ProjectDir)\Libraries\Json\include;$(ProjectDir)\mjLib;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\Libraries\DirectX\lib\x64;$(ProjectDir)\Libraries\OpenSSL\lib\x64;$(ProjectDir)\Libraries\zLib\lib\x64;$(ProjectDir)\Libraries\cURL\lib\x64;$(ProjectDir)\Libraries\FreeType\lib\x64;$(LibraryPath)</LibraryPath>
+    <TargetName>obs-text</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_USRDLL;_WINDLL;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;CURL_STATICLIB</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <OptimizeReferences>false</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.lib;libssl.lib;libcrypto.lib;ws2_32.lib;wldap32.lib;crypt32.lib;advapi32.lib;normaliz.lib;d3d11.lib;d3dx11.lib;freetype.lib;wbemuuid.lib;Gdiplus.lib;winhttp.lib;wininet.lib;ntdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099 /ignore:4098 /ignore:4244 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AmGui\custom_widgets.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_freetype.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="Libraries\ImGui\include\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AmGui\custom_widgets.hpp" />
+    <ClInclude Include="AmGui\directx_blur.h" />
+    <ClInclude Include="AmGui\esp.h" />
+    <ClInclude Include="AmGui\font.h" />
+    <ClInclude Include="AmGui\font_defines.h" />
+    <ClInclude Include="AmGui\image.h" />
+    <ClInclude Include="AmGui\images.h" />
+    <ClInclude Include="AmGui\main.h" />
+    <ClInclude Include="AmGui\notifications.h" />
+    <ClInclude Include="AmGui\pshader.hpp" />
+    <ClInclude Include="AmGui\Sounds.hpp" />
+    <ClInclude Include="Cheat\Cheat.hpp" />
+    <ClInclude Include="Cheat\Game.hpp" />
+    <ClInclude Include="Cheat\GameSDK.hpp" />
+    <ClInclude Include="Cheat\Memory.hpp" />
+    <ClInclude Include="Cheat\Ped.hpp" />
+    <ClInclude Include="Cheat\SimpleMath.h" />
+    <ClInclude Include="Cheat\Structs.hpp" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imconfig.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_freetype.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_internal.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imgui_settings.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Libraries\ImGui\include\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Menu\Menu.hpp" />
+    <ClInclude Include="mjLib\Console.hpp" />
+    <ClInclude Include="mjLib\Hwid.hpp" />
+    <ClInclude Include="mjLib\Logger.hpp" />
+    <ClInclude Include="mjLib\mjLib.hpp" />
+    <ClInclude Include="mjLib\Process.hpp" />
+    <ClInclude Include="mjLib\String.hpp" />
+    <ClInclude Include="Overlay\Overlay.hpp" />
+    <ClInclude Include="Overlay\OverlayDraw.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cheat\SimpleMath.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

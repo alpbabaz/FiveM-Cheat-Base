@@ -1,0 +1,26 @@
+# Build outputs
+x64/
+*.obj
+*.pdb
+*.log
+*.tlog
+*.ilk
+*.recipe
+*.aps
+*.user
+
+# Visual Studio
+.vs/
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+ipch/
+
+# Sensitive
+*.pfx
+
+# OS
+Thumbs.db
+Desktop.ini
